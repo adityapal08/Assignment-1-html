@@ -5,29 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
   </head>
+  <link rel="stylesheet" href="style.css" />
   <body>
     <header>
-      <h1>Aditya Pal</h1>
+      <h1 class="name">Aditya Pal</h1>
+      <nav class="nav">
+        <a href="#Sum">About me</a>
 
-      <nav>
-        <div>
-          <a href="#Summary">About me</a>
-        </div>
-        <div>
-          <a
-            href="https://www.linkedin.com/in/aditya-pal-5b376332a/"
-            target="_blank"
-            >Linkdin</a
-          >
-        </div>
-        <div>
-          <a href="https://github.com/adityapal08" target="_blank">Github</a>
-        </div>
+        <a
+          href="https://www.linkedin.com/in/aditya-pal-5b376332a/"
+          target="_blank"
+          >Linkdin</a
+        >
+
+        <a href="https://github.com/adityapal08" target="_blank">Github</a>
       </nav>
+      <!--<h1 class="des"><mark>A PASSIANOTE FLUTTER DEVELOPER</mark></h1>-->
     </header>
+
     <main>
-      <section id="Summary">
-        <h1><mark>A PASSIANOTE FLUTTER DEVELOPER</mark></h1>
+      <div class="about">
         <h2>Summary</h2>
         <p>
           I’m a passionate Flutter developer with a strong focus on crafting
@@ -41,42 +38,60 @@
           Whether it’s a startup MVP or a full-scale production app, I’m always
           excited to bring creative ideas to life with Flutter.
         </p>
+      </div>
+      <section class="skills">
+        <aside>
+          <h2>Skills & Interests</h2>
+          <ul>
+            <ol>
+              Python(Programming Language)
+            </ol>
+            <ol>
+              Dart(Programming Language)
+            </ol>
+            <ol>
+              Internet of things
+            </ol>
+            <ol>
+              Flutter Development
+            </ol>
+          </ul>
+        </aside>
       </section>
-      <aside>
-        <h2>Skills & Interests</h2>
-        <ul>
-          <li>C(programming Language)</li>
-          <li>Python(Programming Language)</li>
-          <li>Dart(Programming Language)</li>
-          <li>Internet of things</li>
-          <li>Flutter Development</li>
-        </ul>
-      </aside>
     </main>
     <footer>
-      <section>
+      <div class="contact">
         <h2>Contact</h2>
-        <form action="Submit">
-          <div>
-            <label for="Name">Name</label>
-            <input type="text" placeholder="Enter your name" required />
-          </div>
-          <div>
-            <label for="Number">Number</label>
-            <input
-              type="text"
-              placeholder="Enter your number"
-              required=" required"
-            />
-          </div>
-          <div>
-            <label for="Email">Email</label>
-            <input type="text" placeholder="Enter your Email" />
-          </div>
+        <form action="submit">
+          <h3>Full Name</h3>
+          <input
+            type="text"
+            ,
+            name="fullname"
+            ,
+            placeholder="Enter your name"
+          />
+          <h3>Email</h3>
+          <input
+            type="text"
+            ,
+            name="email"
+            ,
+            placeholder="Enter your email address"
+          />
+          <h3>Phone Number</h3>
+          <input
+            type="text"
+            ,
+            name="phonenumber"
+            ,
+            placeholder="Enter your phone number"
+          />
+          <br />
+          <button type="submit">Submit</button>
         </form>
-        <button>Submit</button>
-      </section>
-      <section>
+      </div>
+      <section class="certificate">
         <h2>Certificates</h2>
         <figure>
           <img src="assets/mongo.png" height="250px" width="320px" />
